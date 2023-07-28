@@ -33,7 +33,6 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'rest_framework_simplejwt',
-    'maydon',
     'drf_yasg',
     'django.contrib.admin',
     'django.contrib.auth',
