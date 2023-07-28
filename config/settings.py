@@ -47,7 +47,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 ]
 
-
 SWAGGER_SETTINGS = {
 
     'VALIDATOR_URL': 'http://localhost:8189'
@@ -61,7 +60,7 @@ REST_FRAMEWORK = {
     )
 
 }
-=======
+
 AUTH_USER_MODEL = 'account.CustomUser'
 
 MIDDLEWARE = [
