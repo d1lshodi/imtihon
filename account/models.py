@@ -31,13 +31,19 @@ class OwnerModel(PersonModel):
     class Meta:
         db_table= 'owner'
 
+    def __str__(self) -> str:
+        return str(self.name)
+
 
 class UserModel(PersonModel):
+
+
 
     class Meta:
         db_table= 'user'
 
-
+    def __str__(self) -> str:
+        return str(self.name)
 
 
 

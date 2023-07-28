@@ -25,8 +25,8 @@ class FieldModel(models.Model):
     contact = models.CharField(max_length=250, default='')
     price = models.CharField(max_length=250, default='')
 
-    def str(self):
-        return self.name
+    def __str__(self):
+        return str(self.name)
 
     class Meta:
         db_table = 'field'
@@ -39,4 +39,4 @@ class BronModel(models.Model):
     bron_time = models.CharField(choices=CHOICE)
 
     def __str__(self) -> str:
-        return self.user_id
+        return str(self.user_id)
